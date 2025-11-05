@@ -1,0 +1,48 @@
+---
+title: "Star Wars Dashboard"
+author: "Karl Matias"
+format: dashboard
+---
+
+This is a Quarto website.12
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{r, echo=FALSE}
+library(tidyverse)
+library(plotly)
+```
+
+## Row 1
+
+```{r, warning=FALSE}
+p1 <- ggplot(data = starwars, aes(x = mass, y = height, text = name)) + 
+  geom_point() +
+  theme_bw() +
+  scale_fill_viridis_d()
+
+ggplotly(p1)
+```
+
+## Row 2 {.tabset}
+
+```{r, warning=FALSE}
+#| title: Bar Chart
+b1 <- ggplot(data = starwars, aes(x = mass, y = height, text = name)) + 
+  geom_bar(stat="identity")
+theme(axis.title.x = element_text(angle = 45, vjust = .5, hjust = 1))
+
+ggplotly(b1)
+```
+
+```{r}
+#| title: Table
+starwars <- starwars %>%
+  select(name, height, mass, gender, homeworld, species)
+
+knitr::kable(starwars)
+```
+
+# Page 2
+
+## Row 1
