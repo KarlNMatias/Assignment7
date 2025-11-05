@@ -12,10 +12,14 @@ website:
 
 format:
   html:
-    theme:
-      - minty
+    theme: minty
     css: styles.css
     toc: true
+
+execute:
+  echo: false       # Hide code
+  warning: false    # Hide warnings
+  message: false    # Hide messages (e.g., library startup text)
 
 editor: visual
 
