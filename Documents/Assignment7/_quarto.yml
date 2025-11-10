@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Groomsmen Invite"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "RSVP"
+        href: rsvp.qmd
+      - text: "Attire Vote"
+        href: attire.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
