@@ -3,7 +3,7 @@ title: "Attire Vote"
 format: html
 ---
 
-## Suit and Tie or Baron Tagalog??
+## Suit and Tie or Baron Tagalog???
 <div class="vote-grid">
 
 <div class="card vote">
