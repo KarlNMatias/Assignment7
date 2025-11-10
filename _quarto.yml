@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Groomsmen Invite"
+  title: "Groomsmen Invites"
   navbar:
     left:
       - text: "Home"
